@@ -59,6 +59,11 @@
 }
 
 @font-face {
+	font-family: '华文楷体';
+	src:url('STXINGKA.TTF');
+}
+
+@font-face {
 	font-family: '华文隶书';
 	src:url('STLITI.TTF');
 }
