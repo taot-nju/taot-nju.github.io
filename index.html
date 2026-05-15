@@ -13,6 +13,14 @@
 	<link rel="icon" href="images/ico/step_by_step.png" sizes="32x32">
 	<link rel="apple-touch-icon" href="images/ico/step_by_step.png">
 	<link rel="stylesheet" type="text/css" href="assets/self_fonts/self_fonts_cssfile.css">
+	
+	
+	<!--右边底部的向上箭头，能够返回到文章最开始的地方1/2 展示-->
+	<link rel="stylesheet" type="text/css" href="assets/markdownStyle/iconSetup.css">
+	
+	<!--右边底部的向上箭头，能够返回到文章最开始的地方2/2 动态效果-->
+	<script type="text/javascript" src="assets/blogJS/wp-includes.js.jquery.jquery.js"></script>
+	<script type="text/javascript" src="assets/blogJS/wp-content.themes.type-plus.js.main.js"></script>
 
 	
 	<style>
@@ -51,13 +59,14 @@
 	  .footer {
 		padding-top: 12px;
 		padding-bottom: 12px;
-		background-color: #efece3;
+		background-color: #63065f;
 	  }
 	  
 	  .sponsor {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		background-color: #2c3a4a;
+		height: 45px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #300934;
 	  }
 	  
 	  .intext_img {	  
@@ -70,7 +79,31 @@
 		border:1px dashed #ab0000;
 	  }
 	  
+	  blockquote {
+	    color: #8c1b1399;		
+		margin-left: 0px;  /*引用块前面的那个竖线距离左边界的距离*/
+		background-color: #8c1b1333;
+		border-left: 5px solid #8c1b13;
+		border-radius: 0 .5rem .5rem 0;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: .75rem 1rem;
+		font-style: normal;
+		font-size: 14px;
+	  }
+	  
+	  ul {
+		list-style: circle;
+	  }
+	  
 	</style>
+	
+	<!--ul的list style有哪些？-->
+	<!--
+	 { list-style-type: disc; }
+     { list-style-type: circle; }
+     { list-style-type: square; }
+	-->
 	
 </head>
 	<body>
@@ -102,7 +135,9 @@
 				
 		<p>
 
-			主动！积极！靠谱！<br/>
+			靠谱！主动！积极！<br/>
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; '>在这个浮躁的当下，做点踏实的事！</span>
+			<br/>
 			<br/>
 			● 具有强烈的探索欲和科研热情，深知行动的必要性和重要性！<br/>
 			● 具有优秀的沟通和表达能力，强烈的团队意识，善于组织和规划，乐于分享所学所思。<br/>
@@ -114,6 +149,41 @@
 			<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;兴趣爱好&nbsp;</span>&nbsp;咖啡、做饭、非常热爱阅读，擅长运动包括跳绳（单人）、乒乓球（2~4人）、羽毛球（2~4人）、飞盘（多人）。
 			<br/>
 			<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;行为准则&nbsp;</span>&nbsp;如果你发现你周边缺少什么，你就去创造什么！
+
+		</p>
+
+		
+		
+		<!--空白框（占位符）-->
+		<div style="height: 50px"></div>
+		
+		
+		</p>
+		<br/>
+		<br/>
+		<!--关于科研-->
+		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:Whitney, 楷体;">我的科研（About Research）</span></h2>
+		<div class="sub-line"></div>
+				
+		<p>
+
+			<span style="color:red; font-size:20px; font-family:华文新魏; font-weight:bold">研究方向<span style='color:grey; font-weight:normal; font-size: 14px'>（粒度由粗至细）</span></span>：大语言模型（Large Language Models, LLMs），大语言模型驱动的智能体（LLMs Agent）相关的关键技术，提示优化（Prompt Optimization, PO），智能体记忆（Agent Memory）等。
+			
+			<br/>
+			<br/>
+			
+			<span style='color:red'>◉‣ </span>LLMs让我惊艳的时刻：<br/>
+			<blockquote>既然是研究大语言模型（LLMs），那怎么说明这个是值得研究的呢？（它的强大之处在哪里？）</blockquote>
+			
+			<ul>
+				<li>模仿能力：对于「文档改写」任务，能够针对已经训练得到的模板，把我的文字改写得更精准、地道！</li>
+				<li>方案探索：给定一个任务，它能把可行的方案罗列一遍，任君挑选！</li>
+				<li>软件推荐：在处理Obsidian个人仓库时，让它推荐一个比较好的插件，它能精准推荐！</li>
+				<li>步骤讲解：在面对复杂的问题或者软件操作时，能够详细讲解每个步骤！</li>
+				
+			</ul>
+			
+			<span style='font-weight:bold;'>所以，之所以研究，因为值得！</span>
 
 		</p>
 
@@ -191,37 +261,121 @@
 		</p>
 		
 		
+		<p>
+		
+		<a href="./tech_Share/#.html">OCR模型的使用记录！（待分享）</a><br/><span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; '>据说<a href="https://github.com/opendatalab/MinerU">MinerU</a>也是很好用，但是我没有搞定！如果有愿意分享的朋友可以联系一起琢磨！</span>
+		
+		</p>
+		
+		
 		<!--空白框（占位符）-->
 		<div style="height: 50px"></div>
 		
-		<!--技术教程-->		
+		<!--碎片知识分享-->		
 		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:楷体;">碎片知识分享</span></h2>
 		<div class="sub-line" style='background-color:black'></div>
 		<p>
 		
-		<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> <span style='color:red'>项目中间过程文档如何科学命名？</span></span>
+			<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> <span style='color:red'>项目中间过程文档如何科学命名？</span></span>
+			<br/>
+			
+			<ul>
+				<li><span style='color:#00b456'>推荐 ISO 8601日期 + 项目阶段 + 版本号 + 描述。例子：<br/><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;20260515_180619_exp1_data_preprocessing_v1.2_filtered_outliers.docx&nbsp;</span>。<br/>禁止使用“最新版”“最终版”“整理版”。每天结束时，删除或归档旧版本，只保留最新的。你可以把命名规则写在一张纸上贴电脑旁。</span></li>
+
+			</ul>
+		
+		</p>
+		
+				
+		<p>
+		
+			<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> <span style='color:red'>好用的Chrome插件有哪些？</span>
+			<br/>
+			<ul>
+				<li><span style="color:green; font-family:Consolas, 楷体; ">CCF Rank;</span></li>
+				<li><span style="color:green; font-family:Consolas, 楷体; ">Super Simple Highlighter;</span></li>
+				<li><span style="color:green; font-family:Consolas, 楷体; ">Cool Papers Redirector; </span></li>
+				<li><span style="color:green; font-family:Consolas, 楷体; ">...</span></li>
+
+			</ul>
+		</p>
+		
+		
+		<p>
+
+			<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> Easy Connector 连上立刻 “已注销 VPN、会话已过期” 。
+
+			最简单优先试（最快见效）
+			<ul>
+
+				<li>完全退出 Easy Connector，右键以管理员身份运行；</li>
+				<li>清除缓存：软件里找「清除缓存 / 重置配置」，没有就卸载重装最新版；</li>
+				<li>关掉电脑的代理、加速器、梯子、其他 VPN，只开校园 VPN。</li>
+
+			</ul>
+
+
+		</p>
+
+
+		
+		
+		<p>
+
+			<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> 一些常见软件的公共快捷键有哪些？（助力丝滑操作）
+			<br/>
+			<ul>
+
+				<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Shift&nbsp;</span> + 鼠标滑轮 = 方便操作目标窗口的<span style='color:red'>水平滚动条 (Horizontal Scroll Bar)</span></li>
+
+			</ul>
+
+		</p>
+		
+				
+		<p>
+
+		<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;分享&nbsp;</span> <span style='color:red'>我心目中的好用软件排行榜</span>
+
+		<ul>
+
+			<li>Snipaste&nbsp;&nbsp;<a href="https://www.snipaste.com/">直达链接</a><br/><span style='color:grey; font-style:italic; font-size: 14px'>a simple but powerful snipping tool, and also allows you to pin the screenshot back onto the screen.</span></li>
+
+		</ul>
+
+		</p>
+
+
+		
+		<p>
+		
+		<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;分享&nbsp;</span> <span style='color:red'>一些值得经常浏览的网址</span>
+
+		<ul>
+
+		<li><a href="https://github.com/trending">Github Trending</a>&nbsp;&nbsp;<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; '>See what the GitHub community is most excited about today.</span></li>
+		<li><a href="https://trendshift.io/github-trending-repositories">Trendshift</a>&nbsp;&nbsp;<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; '>一个追踪、展示 GitHub 热门仓库和开发者趋势的平台。</span></li>
+
+		</ul>
+
+		</p>
+
+		
+				
+		<p>
+
+		<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;分享&nbsp;</span> <span style='color:red'>我的「Super Simple Highlighter」配置</span>
 		<br/>
-		<span style='background:white; color:green; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; border: 1px dashed green; font-size: 14px'>&nbsp;回答&nbsp;</span> <span style='color:#00b456'>推荐 ISO 8601日期 + 项目阶段 + 版本号 + 描述。例子：<br/><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;2026-05-09_exp1_data_preprocessing_v1.2_filtered_outliers.docx&nbsp;</span>。<br/>禁止使用“最新版”“最终版”“整理版”。每天结束时，删除或归档旧版本，只保留最新的。你可以把命名规则写在一张纸上贴电脑旁。</span>
-		
-		</p>
-		
-				
-		<p>
-		<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> <span style='color:red'>好用的Chrome插件有哪些？</span><br/>
-		<span style='background:white; color:green; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; border: 1px dashed green; font-size: 14px'>&nbsp;回答&nbsp;</span> <span style="color:green; font-family:Consolas, 楷体; ">CCF Rank; Super Simple Highlighter; Cool Papers Redirector; ...</span>
+		<ul>
 
+			<li>
+				<details>
+					<summary>点击「打开 | 折叠」</summary>
+					<img class="intext_img" src="images/HighlighterGuide_V1.0.png" title="笔记：颜色⇄含义" alt="描述文字">
+				</details>
+			</li>
 
-
-		</p>
-		
-				
-		<p>
-
-		<details>
-			<summary>我的「Super Simple Highlighter」配置</summary>
-			<img class="intext_img" src="images/HighlighterGuide_V1.0.png" title="笔记：颜色⇄含义" alt="描述文字">
-		</details>
-
+		</ul>
 		</p>
 
 
@@ -274,11 +428,15 @@
 		
 		</div>
 		
+		<a href=".navbar" id="scroll-up" style="background-color: transparent; display: block; ">
+			<i class="material-icons md-20 md-middle">
+				<img style="width:40px; height:40px;" src="images/ico/NJU_Badge128.png" title="" alt="">
+			</i>
+		</a>
 		<div class="footer"></div>
 		
-		
 		<div class="sponsor">
-				<p style="text-align: center; color: #a3a3a3">
+				<p style="text-align: center; color: white">
 				
 					© 2026 TAO
 				
