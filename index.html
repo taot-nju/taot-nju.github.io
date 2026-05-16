@@ -13,6 +13,7 @@
 	<link rel="icon" href="images/ico/step_by_step.png" sizes="32x32">
 	<link rel="apple-touch-icon" href="images/ico/step_by_step.png">
 	<link rel="stylesheet" type="text/css" href="assets/self_fonts/self_fonts_cssfile.css">
+	<link rel="stylesheet" type="text/css" href="assets/main/main.css">
 	
 	
 	<!--右边底部的向上箭头，能够返回到文章最开始的地方1/2 展示-->
@@ -24,77 +25,150 @@
 
 	
 	<style>
-	  .container {
-		margin: 0 auto;    /* 水平居中 */
-		padding: 0 10%;   /* 在小屏幕下左右留出一点空隙，防止内容紧贴屏幕边框 */
-		background-color: #fffdfa;
-	  }
-	  
-	  .navbar {
-		background-color: #8c1b13;
-		margin-bottom: 0;
-		min-height: 100px;
-		border: 1px solid transparent;
-		display: flex;
-		justify-content: center; /* 水平居中 */
-		align-items: center;     /* 垂直居中 */
-	  }
-	  
-	  .banner {
-		background: #ddd;
-		padding: .5rem 0 .375rem;
-		color: #616161;
-		font-size: .875rem;
-		line-height: 1.5rem;
-		border-bottom: 1px solid #d0d0d0;
-	  }
-	  
-	  .sub-line {
-		width: 30%;              /* 固定线条长度 */
-		height: 1px;              /* 线条高度 */
-		background-color: black;   /* 线条颜色 */
-		margin: 0 0;        /* 水平居中并与标题有间距 */
-	  }
-	  
-	  .footer {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		background-color: #63065f;
-	  }
-	  
-	  .sponsor {
-		height: 45px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-color: #300934;
-	  }
-	  
-	  .intext_img {	  
-		/* 只当图片太大时缩小，正常大小不放大 */
-		max-width: 40%;
-		height: auto;
+		.container {
+			margin: 0 auto;    /* 水平居中 */
+			padding: 0 10%;   /* 在小屏幕下左右留出一点空隙，防止内容紧贴屏幕边框 */
+			background-color: #fffdfa;
+		}
 
-		/* 默认边框 */
-		border-radius:10px;
-		border:1px dashed #ab0000;
-	  }
+		.navbar {
+			background-color: #8c1b13;
+			min-height: 100px;
+			border: 1px solid transparent;
+			text-align: center; /* 水平居中 */
+			padding: 10px 0;
+		}
+
+		.banner {
+			background: #ddd;
+			padding: .5rem 0 .375rem;
+			color: #616161;
+			font-size: .875rem;
+			line-height: 1.5rem;
+			border-bottom: 1px solid #d0d0d0;
+		}
+
+		.sub-line {
+			width: 30%;              /* 固定线条长度 */
+			height: 1px;              /* 线条高度 */
+			background-color: black;   /* 线条颜色 */
+			margin: 0 0;        /* 水平居中并与标题有间距 */
+		}
+
+		.footer {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			background-color: #63065f;
+		}
+
+		.sponsor {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #300934;
+		}
+
+		.intext_img {	  
+			/* 只当图片太大时缩小，正常大小不放大 */
+			max-width: 40%;
+			height: auto;
+
+			/* 默认边框 */
+			border-radius:10px;
+			border:1px dashed #ab0000;
+		}
+
+		blockquote {
+			color: #8c1b1399;		
+			margin-left: 0px;  /*引用块前面的那个竖线距离左边界的距离*/
+			background-color: #8c1b1333;
+			border-left: 5px solid #8c1b13;
+			border-radius: 0 .5rem .5rem 0;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			padding: .75rem 1rem;
+			font-style: normal;
+			font-size: 14px;
+		}
+
+		ul {
+			list-style: circle;
+		}
+		
+		
+		a {
+			/* text-decoration: underline;  开启原生下划线 */
+			/* text-underline-offset: 3px;  调整下划线距离文字的像素 */
+			/* box-shadow: inset 0 -4px 0 blue;  负值向上偏移，参数依次为 x轴位移, y轴位移, 模糊半径, 颜色 */
+			
+			/* text-decoration: none;  去除默认下划线 */
+			/* border-bottom: 1px dotted red;  设置下划线颜色及粗细 */
+			/* padding-bottom: 1px;  控制边框线与文字的垂直间距 */
+
+		}
+			
+			/* 1. 未点击时的颜色 */
+			a:link {
+				color: green;
+				text-decoration: none; /* 去除下划线 */
+			}
+
+			/* 2. 点击过后的颜色 */
+			a:visited {
+				color: red;
+			}
+
+			/* 3. 鼠标悬停时的颜色 */
+			a:hover {
+				color: #ff0000; 
+				padding-bottom: 1px;
+				border-bottom: 1px dotted red;
+			}
+
+			/* 4. 鼠标点击瞬间的颜色 */
+			a:active {
+				color: #990000; /* 绿色 */
+			}
+			
+		.no-underline:hover {
+			text-decoration: none !important;
+			border-bottom: none !important;
+		}
+
 	  
-	  blockquote {
-	    color: #8c1b1399;		
-		margin-left: 0px;  /*引用块前面的那个竖线距离左边界的距离*/
-		background-color: #8c1b1333;
-		border-left: 5px solid #8c1b13;
-		border-radius: 0 .5rem .5rem 0;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-		padding: .75rem 1rem;
-		font-style: normal;
-		font-size: 14px;
-	  }
-	  
-	  ul {
-		list-style: circle;
-	  }
+		/* 1. 隐藏 Chrome/Safari 的默认箭头 */
+		details summary::-webkit-details-marker {
+			display: none;
+		}
+
+		/* 1. 隐藏 Firefox 等浏览器的默认箭头 */
+		details summary {
+			list-style: none;
+		}
+
+		/* 2. 设置 <summary> 为相对定位，准备放置图标 */
+		details summary {
+			position: relative;
+			padding-left: 25px; /* 给自定义图标留出空间 */
+			cursor: pointer;
+		}
+
+		/* 3. 使用伪元素添加自定义的【折叠】箭头（例如：向右箭头） */
+		details summary::before {
+			content: "📘"; 
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 14px;
+			transition: transform 0.3s ease; /* 添加旋转动画 */
+		}
+
+		/* 4. 当 details 展开时，旋转箭头变为【展开】状态（例如：向下箭头） */
+		details[open] summary::before {
+			content: "📖";
+			/* 或者使用 transform: rotate(90deg); 如果你用的是三角形 */
+		}
+
 	  
 	</style>
 	
@@ -112,7 +186,9 @@
 				"<span style='font-family: Consolas; color: #ffe680'>Talk is cheap. Show me the code.</span>" - Linus Torvalds<br/>
 				Even code is cheap. <span style='font-weight:bold; color: gold'>Do your own experiments!</span>
 				<br/><br/>
-				<span style='font-style: italic; color: white; font-size: 13px'>别磨叽了！搂几眼论文就Coding起来吧！</span>
+				<span style='font-style: normal; color: white; font-size: 13px'>做 >>> 让自己踏实的事！</span>
+				<br/>
+				<span style='color:grey; font-style:normal; font-size: 14px'>踏实 = 做了能积累的事。进步 = 比昨天多<del style="text-decoration-color: red; text-decoration-thickness: 3px;">知道</del><span style="color:red; font-size:20px; font-family:华文新魏; font-weight:bold">干</span>了一点。</span>
 			</span>
 		</div>
 		<div class="banner"></div>
@@ -196,6 +272,17 @@
 		<!--武器库-->
 		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:楷体;">一句话武器库</span></h2>
 		<div class="sub-line"></div>
+		
+		
+		<p>
+
+			<span style="color:blue; font-family:华文楷体; ">没有行动，信息就是噪音！</span>
+			<br/>
+			<span style="color:blue; font-family:华文楷体; ">犹豫不决就记住“最小启动”这个原则<sup style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 1px dotted red;'>&nbsp;◉&nbsp;</sup> ！</span>
+			
+
+		</p>
+
 		<p>
 		
 			<span style="color:red; font-family: Consolas, 楷体; font-weight: bold; font-size: 18px">● “你去试了吗？就....”</span><br/><br/>
@@ -207,7 +294,7 @@
 		<p>
 
 			<span style="color:red; font-family: Consolas, 楷体; font-weight: bold; font-size: 18px">○  “只要你此时此刻不是在执行，你手上的那个动作大概率就是为了逃避执行而专门打造的动作。”</span><br/><br/>
-			<span style='color:grey; font-size: 14px'>如果不想直接行动，仔细品品这句话吧！</span>
+			<span style='color:grey; font-size: 14px'>如果不想直接行动，仔细品品这句话吧！而且牢记：<span style="color:red; font-family:华文新魏; ">重要的是 “执行”这个动作本身，而不是结果。</span></span>
 
 		</p>
 
@@ -238,6 +325,20 @@
 
 			<span style="color:red; font-family: Consolas, 楷体; font-weight: bold; font-size: 18px">● “比失败更可怕的是没有尝试！”</span><br/><br/>
 			<span style='color:grey; font-size: 14px'>值得做的事情，也值得搞砸。一件值得做的事即使做得不怎么样也是值得的。</span>
+
+		</p>
+		
+		<p>
+
+			<span style="color:red; font-family: Consolas, 楷体; font-weight: bold; font-size: 18px">○ 领导力不是命令，是吸引。</span>
+			
+			<br/>
+			
+			<span style='color:grey; font-size: 14px'>“好好培养员工，让他们具备找到下一份工作的能力。但也要善待员工，让他们永远不想换工作。”
+			（"Train employees well enough they could get another job, but treat them well enough so they never want to."）
+			<br/>
+			——《宝贵的人生建议》凯文· 凯利
+			</span>
 
 		</p>
 
@@ -366,19 +467,17 @@
 
 		<span style="background:white; border: 1px solid #af2f53; color: #d64463; font-family: Arial Rounded MT; border-radius: 5px; font-weight:bold; font-size: 14px">&nbsp;分享&nbsp;</span> <span style='color:red'>我的「Super Simple Highlighter」配置</span>
 		<br/>
-		<ul>
+		<div style="margin-left: 25px; ">
 
-			<li>
 				<details>
 					<summary>点击「打开 | 折叠」</summary>
 					<img class="intext_img" src="images/HighlighterGuide_V1.0.png" title="笔记：颜色⇄含义" alt="描述文字">
 				</details>
-			</li>
 
-		</ul>
+		</div>
 		</p>
 
-
+		
 		
 		<!--空白框（占位符）-->
 		<div style="height: 50px"></div>
@@ -391,6 +490,28 @@
 		<a href="./attachments/第七版中国计算机学会推荐国际学术会议和期刊目录（正式版）.pdf">CCF目录 2026</a>
 		
 		</p>
+		
+		<!--空白框（占位符）-->
+		<div style="height: 50px"></div>
+		
+		<!--我的已读书单-->
+		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:楷体;">我的<span style='font-family:Whitney'>Mental Model</span></span></h2>
+		<div class="sub-line" style='background-color:black; width:40%'></div>
+		<br/>
+		<span style='color:#990000; font-family:Consolas; font-size: 13px; font-style:normal; '>A mental model is a simplified conceptual framework, belief, or psychological representation of how the world (or a specific system) works.<br/>It acts as an internal map that compresses complexity, allowing you to interpret situations, make decisions, predict outcomes, and solve problems.</span>
+		
+		<br/>
+		
+		<blockquote>
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 最小启动！
+		</blockquote>
+				
+		<blockquote>
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 一书在手，便不觉得浪费时间了。 ——查理·芒格<br/>
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'>手里只要捧着一本好书，无论是通勤、等候还是碎片时间，都能瞬间变成自我滋养的黄金期。</span>
+		</blockquote>
+		
+		<br/>
 		
 		<!--空白框（占位符）-->
 		<div style="height: 50px"></div>
@@ -428,7 +549,7 @@
 		
 		</div>
 		
-		<a href=".navbar" id="scroll-up" style="background-color: transparent; display: block; ">
+		<a href=".navbar" class="no-underline" id="scroll-up" style="background-color: transparent; display: block;">
 			<i class="material-icons md-20 md-middle">
 				<img style="width:40px; height:40px;" src="images/ico/NJU_Badge128.png" title="" alt="">
 			</i>
@@ -436,9 +557,11 @@
 		<div class="footer"></div>
 		
 		<div class="sponsor">
-				<p style="text-align: center; color: white">
+				<p style="text-align: center; color: white; font-family:Consolas">
 				
-					© 2026 TAO
+					© 2026 TAO <span class="icon fa-wechat" style='color:#04BE02; font-style: normal'>&nbsp;t_ideal</span>
+					<br/>
+					<span style="color:#63065f; font-family:华文楷体; ">千金易得，知己难寻：交个朋友吧！</span>
 				
 				</p>
 		</div>
