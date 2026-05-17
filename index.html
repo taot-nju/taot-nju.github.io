@@ -62,6 +62,7 @@
 		}
 
 		.sponsor {
+			height: 45px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			background-color: #300934;
@@ -91,7 +92,7 @@
 		}
 
 		ul {
-			list-style: disc;
+			list-style: disc; /* ul的list style的属性名是“list-style-type”，属性值有：disc, circle, square, none. */
 		}
 		
 		
@@ -171,13 +172,6 @@
 
 	  
 	</style>
-	
-	<!--ul的list style有哪些？-->
-	<!--
-	 { list-style-type: disc; }
-     { list-style-type: circle; }
-     { list-style-type: square; }
-	-->
 	
 </head>
 	<body>
@@ -346,6 +340,23 @@
 		</p>
 
 		
+		
+		
+		<!--空白框（占位符）-->
+		<div style="height: 50px"></div>
+		
+		<!--技术教程-->		
+		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:Whitney;">我的代码复现日志（ReproductionLog）</span></h2>
+		<div class="sub-line" style='background-color:black'></div>
+		<span style='color:#99000066; font-family:微软雅黑; font-size: 13px; font-style:normal; '>Source code → Typora → WebCode → Super Simple Highlighter → Maintenance(Export → Save Backup...)</span>
+		<p>
+		
+		<a href="#">Coming soon!</a>
+		
+		</p>
+		
+		
+		
 		<!--空白框（占位符）-->
 		<div style="height: 50px"></div>
 		
@@ -389,6 +400,23 @@
 			</ul>
 		
 		</p>
+		
+		<p>
+		
+			<span style="background:white; border-radius: 5px; font-weight:bold; font-family: Arial Rounded MT; color: red; border: 1px dotted red; font-size: 14px">&nbsp;问题&nbsp;</span> <span style='color:red'>如何给变量命名？（看看Claude Code的命名！）</span>
+			
+			<br/>
+			
+			<ul style="list-style-type: none;">
+				<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;# Real CC timeouts:&nbsp;</span></li>
+				<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;# TOOL_HOOK_EXECUTION_TIMEOUT_MS = 600000 (10 minutes for tool hooks)&nbsp;</span></li>
+				<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;# SESSION_END_HOOK_TIMEOUT_MS = 1500 (1.5 seconds for SessionEnd hooks)&nbsp;</span></li>
+			</ul>
+		
+		</p>
+		
+		
+		
 		
 				
 		<p>
@@ -527,7 +555,7 @@
 		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:Whitney;">我的<span style='font-family:Whitney'>Mental Model</span></span></h2>
 		<div class="sub-line" style='background-color:black; width:40%'></div>
 		<br/>
-		<span style='color:#990000; font-family:Consolas; font-size: 13px; font-style:normal; '>A mental model is a simplified conceptual framework, belief, or psychological representation of how the world (or a specific system) works.<br/>It acts as an internal map that compresses complexity, allowing you to interpret situations, make decisions, predict outcomes, and solve problems.</span>
+		<span style='color:#99000066; font-family:Consolas; font-size: 13px; font-style:normal; '>A mental model is a simplified conceptual framework, belief, or psychological representation of how the world (or a specific system) works.<br/>It acts as an internal map that compresses complexity, allowing you to interpret situations, make decisions, predict outcomes, and solve problems.</span>
 		
 		<br/>
 		
@@ -583,14 +611,17 @@
 				<img style="width:40px; height:40px;" src="images/ico/NJU_Badge128.png" title="" alt="">
 			</i>
 		</a>
-		<div class="footer"></div>
+		<div class="footer">
+			<center>
+				<span style="color:white; font-family:华文楷体; ">千金易得，知己难寻：交个朋友吧！（<span style='color:white'>和优秀的人一起，做难而正确的事！</span>）</span>
+			</center>
+		</div>
 		
 		<div class="sponsor">
 				<p style="text-align: center; color: white; font-family:Consolas">
 				
 					© 2026 TAO <span class="icon fa-wechat" style='color:#04BE02; font-style: normal'>&nbsp;t_ideal</span>
-					<br/>
-					<span style="color:#63065f; font-family:华文楷体; ">千金易得，知己难寻：交个朋友吧！（<span style='color:#63065f'>和优秀的人一起，做难而正确的事！</span>）</span>
+					
 				
 				</p>
 		</div>
