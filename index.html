@@ -170,7 +170,21 @@
 			/* 或者使用 transform: rotate(90deg); 如果你用的是三角形 */
 		}
 
-	  
+		.gradient-line {
+            /* 移除默认边框 */
+            border: none;
+            /* 设置线条高度 */
+            height: 3px;
+            /* 设置宽度，可根据需要调整 */
+            width: 80%; 
+            margin: 50px auto;
+            /* 使用线性渐变实现中间红、两边浅黑 */
+            background: linear-gradient(to right, 
+                rgba(85, 20, 91, 0.2), 
+                rgba(41, 13, 50, 1) 50%, 
+                rgba(85, 20, 91, 0.2)
+            );
+        }
 	</style>
 	
 </head>
@@ -601,10 +615,10 @@
 		<span style='color:grey; font-style:italic; font-size: 14px'>持续更新中...（想起来我就更新&nbsp;<font style='color: black; font-style:normal;'>:P</font>）</span>
 		</ul>
 		
-		
-		
-		
 		</div>
+		
+		
+		<hr class="gradient-line">		
 		
 		<center>
 		<!--giscus提供的评论功能-->
@@ -620,7 +634,7 @@
 					data-reactions-enabled="1"
 					data-emit-metadata="1"
 					data-input-position="top"
-					data-theme="light_high_contrast"
+					data-theme="transparent_dark"
 					data-lang="zh-CN"
 					data-loading="lazy"
 					crossorigin="anonymous"
