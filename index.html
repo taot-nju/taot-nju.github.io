@@ -302,6 +302,11 @@
 		<h2 style="margin-bottom: 0px;"><span style="color:black; font-family:Whitney;">技术教程</span></h2>
 		<div class="sub-line" style='background-color:black'></div>
 		
+		
+		<p>		
+			<a href="./tech_Share/python - .html">Linux终端：写文件、执行.py代码、打印文件内容</a>	<span style='color:silver; font-size: 13px; font-style:normal; '>[2026.07.16]</span>
+		</p>
+		
 		<p>		
 			<a href="./tech_Share/multi-account-for-git.html">1台电脑如何操作多个Git账户？</a>	<span style='color:silver; font-size: 13px; font-style:normal; '>[2026.05.12]</span>
 		</p>
@@ -424,6 +429,33 @@
 					</ul>
 				
 				</li>
+				
+				<li> 编辑模式下的“光标”位置
+				
+					<ul style="list-style-type: circle;">
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Home&nbsp;</span>：把光标移动到<span style="color:blue; font-family:幼圆; ">光标所在的当前行的行首&nbsp;</span>。</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Ctrl + Home&nbsp;</span>：把光标移动到<span style="color:blue; font-family:幼圆; ">整个文件的最开始的位置&nbsp;</span>。</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Shift + Home&nbsp;</span>：选中一串内容：（起始）从光标此刻所在位置开始 → （终止）直到<span style='color:red; font-family:幼圆;'>当前行的行首位置</span>结束。
+						</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Ctrl + Shift + Home&nbsp;</span>：选中一大段内容：（起始）从光标此刻所在位置开始 → （终止）直到<span style='color:red; font-family:幼圆;'>当前文件的起始位置</span>结束。
+						</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Shift + ←&nbsp;</span>：选中一个字符：（起始）从光标此刻所在位置开始 → （终止）光标左边的1个字符结束。
+						</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Shift + →&nbsp;</span>：选中一个字符：（起始）从光标此刻所在位置开始 → （终止）光标右边的1个字符结束。
+						</li>
+						
+					</ul>
+				
+				</li>
+				
+				<li> Linux终端
+				
+					<ul style="list-style-type: circle;">
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Ctrl + U&nbsp;</span>：删除光标左侧所有命令</li>
+						<li><span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Ctrl + R&nbsp;</span>：在历史命令中查找和键入的命令最匹配的命令（没找到就继续按<span style='border-radius: 5px; background: #e3fdb8; font-family: Consolas; padding: 2px; font-size: 13px; font-weight: bold'>&nbsp;Ctrl + R</span>）</li>
+					</ul>
+				
+				</li>
 
 			</ul>
 
@@ -532,29 +564,6 @@
 		<br/>		
 		
 		
-		<blockquote>
-		
-			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
-			
-			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'>&nbsp;&nbsp;决不中断！ </span>
-			
-			<br/>
-			
-			<ul>	
-				<li>
-					<span style='color:grey; font-style:normal; font-size: 14px; line-height: 160%;'>
-						查理·芒格曾经说过，复利的核心是“不要轻易打断它”。不仅适用于财富，更适用于知识、技能和良好习惯的长期叠加。
-					</span>		
-				</li>
-				
-				<li>
-					我已经断过的事情：<span style='color:red'>早起！跳绳！写读书笔记！</span>断过之后又痛定思痛，终于感受到了这句话的魅力，我不能说以后可以完全不断，但，希望这句话能够在我想要打断的时候，提醒我坚持下去！
-				</li>
-			</ul>
-			
-		</blockquote>	
-		
-		
 		<!-- 一个模板
 		
 		<blockquote>
@@ -579,6 +588,82 @@
 			
 		</blockquote>	
 		-->
+		
+		<blockquote>
+		
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
+			
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'> 量变引起质变！ </span>
+			
+			<br/>
+			
+			<ul>	
+				<li>
+					<span style='color:grey; font-style:normal; font-size: 14px; line-height: 160%;'>
+						量一定要大啊！ 
+					</span>	（先看个100篇论文再说！）	
+				</li>
+				
+				<li>
+					 先复现个100篇论文再说！
+				</li>
+			</ul>
+			
+		</blockquote>	
+		
+		<blockquote>
+		
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
+			
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'> 永不中断！每天都要Show Up！</span>
+			
+		</blockquote>	
+		
+		<blockquote>
+		
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
+			
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'> 有花堪折直须折！ 有的用就赶紧用！</span>
+			
+			<br/>
+			
+			<ul>	
+				<li>
+					<span style='color:grey; font-style:normal; font-size: 14px; line-height: 160%;'>
+						你小时候舍不得用的笔记本，长大了也用不上了。
+					</span>		
+				</li>
+				
+				<li>
+					那些过期的东西，是不是都浪费了？！
+				</li>
+			</ul>
+			
+		</blockquote>	
+		
+		<blockquote>
+		
+			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
+			
+			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'>&nbsp;&nbsp;决不中断！ </span>
+			
+			<br/>
+			
+			<ul>	
+				<li>
+					<span style='color:grey; font-style:normal; font-size: 14px; line-height: 160%;'>
+						查理·芒格曾经说过，复利的核心是“不要轻易打断它”。不仅适用于财富，更适用于知识、技能和良好习惯的长期叠加。
+					</span>		
+				</li>
+				
+				<li>
+					我已经断过的事情：<span style='color:red'>早起！跳绳！写读书笔记！</span>断过之后又痛定思痛，终于感受到了这句话的魅力，我不能说以后可以完全不断，但，希望这句话能够在我想要打断的时候，提醒我坚持下去！
+				</li>
+			</ul>
+			
+		</blockquote>	
+		
+		
 		
 		<blockquote>
 			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
@@ -698,7 +783,7 @@
 			<span style='background:black; border-radius: 5px; color:red; font-weight:bold; font-family: Arial Rounded MT; border: 2px dotted red; font-size: 14px'>&nbsp;原则&nbsp;</span> 
 			<span style='color:#990000; font-family:微软雅黑; font-size: 13px; font-style:normal; line-height: 300%;'>&nbsp;&nbsp;领导力不是命令，是吸引。</span>
 			<br/>
-			好好培养员工，让他们具备找到下一份工作的能力。但也要善待员工，让他们永远不想换工作。” （"Train employees well enough they could get another job, but treat them well enough so they never want to."）
+			好好培养员工，让他们具备找到下一份工作的能力。但也要善待员工，让他们永远不想换工作。（"Train employees well enough they could get another job, but treat them well enough so they never want to."）
 ——《宝贵的人生建议》凯文· 凯利！
 		</blockquote>
 		
